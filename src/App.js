@@ -1,25 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+// Class based components
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  a="Pandit";
+  render() {
+    return (
+      <div>
+        <h1>Class based components</h1> {this.a}
+      </div>
+    )
+  }
 }
 
-export default App;
